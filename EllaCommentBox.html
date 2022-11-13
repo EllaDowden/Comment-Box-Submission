@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comment Box Project</title>
+    <link rel="stylesheet" href="EllaCommentBox.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <form id="EllaForm">
+      <div>
+        <h2>Comment Box - Ella Dowden</h2>
+        <p>
+          If you have any tips or suggestions regarding any of my projects/
+          submissions to Coders and Founders please leave them below :)
+        </p>
+        <h3>Full name:</h3>
+        <input id="userName" type="text" name="name" />
+
+        <h3>Email:</h3>
+        <input id="userEmail" type="email" name="email" />
+
+        <h3>Comment:</h3>
+
+        <textarea id="userComment" maxlength="200" wrap="hard" name="comment">
+Please leave a comment here!</textarea
+        >
+        <p id="warningAlert"></p>
+
+        <p>Remaining <span id="info"></span> /140</p>
+
+        <input
+          id="submit"
+          type="button"
+          onclick="commentBox()"
+          value="Submit!"
+        />
+
+        <h4>After submission, your details and comment will appear below:</h4>
+        <p id="data"></p>
+      </div>
+    </form>
+  </body>
+  <script src="EllaCommentBox.js"></script>
+</html>

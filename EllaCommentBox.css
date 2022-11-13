@@ -1,0 +1,78 @@
+* {
+  font-family: Monaco;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+  background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+}
+
+p {
+  font-style: italic;
+}
+
+form {
+  width: 100%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto;
+}
+
+p#data {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: indigo;
+  font-weight: 100;
+  font-size: 1rem;
+  text-align: center;
+  font-style: bold;
+}
+
+input {
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+input#submit {
+  border: black solid 1px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+input#submit:hover {
+  background-color: lightpink;
+  color: black;
+  border: 1px solid black;
+}
+
+textarea {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
