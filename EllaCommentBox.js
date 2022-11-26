@@ -1,3 +1,5 @@
+// get data for display
+
 function commentBox() {
   let data = "";
   let name = document.getElementById("userName").value;
@@ -31,12 +33,13 @@ textarea.addEventListener("input", function () {
 
 textarea.addEventListener("input", warningAlert);
 
+// character over limit alert
 function warningAlert() {
   let warning;
   let count = document.getElementById("userComment").value.length;
 
   if (count > max) {
-    (warning = "Please don't exceed the 140 character limit please!"),
+    (warning = "Please don't exceed the 140 character limit!"),
       (document.getElementById("userComment").style.color = "red");
     document.getElementById("userComment").style.border = "2px solid red";
   } else {
